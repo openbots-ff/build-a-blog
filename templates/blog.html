@@ -6,8 +6,10 @@
 <h1>Build a Blog</h1>
 
 {% for entry in bloglist %}
-    <h2><a href="/blog?id={{entry.id}}">{{entry.title}}</a></h2>
-    <p>{{entry.body}}</p>
+    <div class = "entry">
+        <h2><a href="/blog?id={{entry.id}}">{{entry.title}}</a></h2>
+        <p>{{entry.body}}</p>
+    </div>
     <hr />
 {% endfor %}
 

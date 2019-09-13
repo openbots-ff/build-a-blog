@@ -9,7 +9,7 @@ app.config['DEBUG'] = True
 # user:password@server:portNumber/databaseName
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://build-a-blog:SHINee5252008@localhost:8889/build-a-blog'
-app.config['SQLALCHEMY_ECHO'] = True
+app.config['SQLALCHEMY_ECHO'] = False
 db = SQLAlchemy(app)
 
 class Blog(db.Model):
